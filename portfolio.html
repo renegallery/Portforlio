@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Rene Li</title>
+    <style>
+        li {
+        display: inline;
+        padding-right: 25px;
+        }
+        .btn{
+        border:1px solid #fcd945;
+        color:#b8452f;
+        background-color:#fcd945;
+        }
+        .btn:hover{
+            border:1px solid #fff;
+            color:#b8452f;
+            background-color:#fff;
+        }
+                * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        body { font-family: sans-serif; }
+
+        .gallery {
+          background: #383838;
+        }
+
+        .gallery-cell {
+          width: 60%;
+          height: 400px;
+          margin-right: 0px;
+          background: #383838;
+          //counter-increment: gallery-cell;
+        }
+
+        .gallery-cell a {
+          padding: 0px;
+          margin: 0px;
+        }
+        .gallery img {
+          display: block;
+          height: 400px;
+        }
+
+        /* Slide */
+        .hover05 figure img {
+            margin-left: 300px;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: 0.4s ease-in-out;
+            transition: .4s ease-in-out;
+        }
+        .hover05 figure:hover img {
+            margin-left: 0;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="flickity/flickity.min.css" media="screen">
+    <script src="flickity/flickity.pkgd.min.js"></script>
+</head>
+<body bgcolor="#383838" font-family: sans-serif>
+    <div class="left">
+        <div class = "overlay-logo active">
+            <center>
+                <img src = "assets/helloworld.png" height = 50% width = 50%>
+            </center>
+        </div>
+        <div>
+            <center>
+            <ul>
+                <li><a href = "https://www.linkedin.com/in/yileili" class="linkedin">
+                        <img src = "assets/lk.png" width = "20">
+                    </a></li>
+                <li><a href = "https://github.com/renegallery" class ="github">
+                        <img src = "assets/git_icon.png" width = "20">
+                    </a></li>
+                <li><a href = "mailto:yileili2016@u.northwestern.edu" class = "email">
+                        <img src = "assets/email.png" width = "20">
+                </a></li>
+            </ul>
+            </center>
+        </div>
+    </div>
+
+ <div align = "center">
+        <a href = "assets/Rene_Resume.pdf">
+            <input value ="Resume" class = "btn" type= "submit" style = "width: 150px; height: 30px;">
+        </a>
+    </div>
+
+    <div class="gallery js-flickity"
+  data-flickity-options='{ "imagesLoaded": true, "percentPosition": false}'>
+        <div class = "gallery-cell">
+            <div class="hover05">
+                <figure>
+                    <img src="assets/fw.png" alt="fw" />
+                </figure>
+                <span>Hover</span>
+            </div>
+
+            </a>
+        </div>
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+</div>
+
+
+
+</body>
+</html>
